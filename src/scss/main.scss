@@ -1,3 +1,65 @@
 body{
     padding-top: 18px;
 }
+span.glyphicon{
+    float: right;
+    margin-right: 16px;
+    cursor: pointer;
+}
+span.badge{
+    cursor: pointer;
+}
+.glyphicon-remove{
+    color: red;
+}
+.glyphicon-edit{
+    color: green;
+}
+.deadline{
+    color: red;
+    margin-left: 22px;
+}
+.lazy{
+    color: green;
+    margin-left: 22px;
+}
+.modalOuter{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba($color: #000000, $alpha: 0.6);
+    z-index: 500;
+    transition: opacity 2s;
+    opacity: 0;
+}
+.modalInner{
+    width: 80%;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 16px;
+    border: 1px solid orangered;
+    padding: 16px 16px 38px 16px;
+    transition: opacity 2s;
+    // opacity: 1;
+}
+.modalInner textarea{
+    width: 85%;
+    margin-bottom: 22px;
+    border: none;
+}
+.modalOuter.modalShow{
+    transition: opacity 1s;
+    opacity: 1; 
+}
+.modalInner.modalShow{
+    transition: opacity 1s;
+    opacity: 1; 
+}
+.done{
+    text-decoration: line-through;
+}
